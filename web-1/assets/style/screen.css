@@ -1,7 +1,84 @@
-/* CSS for draw.html. */
-#canvas { width: 400px;
-          border: 1px solid #999999;
-          border-collapse: collapse; }
-td      { width: 4px; height: 4px; margin: 0px; padding: 0px; }
-.blue   { background-color: blue; }
-.red    { background-color: red; }
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="screen.css">
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header 
+header {
+  background-color: orange;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+} */
+
+/* Create two columns/boxes that floats next to each other */
+.topnav {
+  overflow: hidden;
+  background-color: black;
+}
+
+.topnav a {
+  float: left;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #EBE6E6;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: black;
+  color: white;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: blue;
+  height: 300px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: black;
+  padding: 2px;
+  text-align: left;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  topnav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+<body>
+
