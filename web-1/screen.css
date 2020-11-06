@@ -1,10 +1,7 @@
-<style>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-
-
-
 body {
   font-family: Arial, Helvetica, sans-serif;
+   background-image:
+   url('webpage-background.jpg');
 }
 
 h2 {
@@ -13,7 +10,7 @@ h2 {
 
 a.ex1:hover, a.ex1:active {
   color:lightgrey;
-  text-decoration-style: none;
+  text-decoration: none;
 }
 
 
@@ -45,12 +42,12 @@ img {
 
 body {
    background-image:
-   url('webpage-background.jpg');
+   url('portfolio/web-1/assets/images/webpage-background.jpg');
 }  
 
 .bg-img {
   /* The image used */
-  background-image: url("webpage-header.jpg");
+  background-image: url("portfolio/web-1/assets/images/webpage-header.jpg");
 
   min-height: 200px;
   
@@ -129,5 +126,5 @@ footer {
     height: auto;
   }
 }
-</style>
+
 
