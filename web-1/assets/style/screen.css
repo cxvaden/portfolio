@@ -36,7 +36,10 @@ img {
 
 
 
-   
+body {
+   background-image:
+   url("web-1/assets/images/webpage-background.jpg");
+}  
 
 .bg-img {
   /* The image used */
