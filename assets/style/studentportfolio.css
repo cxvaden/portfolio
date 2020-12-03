@@ -15,10 +15,17 @@ body {
 
 p {
 	margin-bottom: 200px;
-	}
 	
+	}
+
+relative {	
+    position: left;
+    left: 30px;
+}
+
 img {
   float: left;
+  border: double;
 }
 
 .listmargin  {
