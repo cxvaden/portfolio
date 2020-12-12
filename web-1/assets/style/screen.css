@@ -1,126 +1,121 @@
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  
+html{
+  position:relative;
+  min-height: 100%;
 }
-
-h2 {
-  color: blue;
-}
-
-a.ex1:hover, a.ex1:active {
-  color:lightgrey;
-  text-decoration: none;
-}
-
-
-a:link {
-  color: black;
-}
-
-
-a:hover {
-  color: green;
-}
-
-
-h3 {
-  color: blue;
-}
-
-
-
-img { 
-   border:1px solid #021a40;
-   
-}
-
-
 
 body {
-   background-image:
-   url("web-1/assets/images/webpage-background.jpg");
-}  
-
-.bg-img {
-  /* The image used */
-  background-image: url("https://github.com/cxvaden/portfolio/raw/master/web-1/assets/images/webpage-header.jpg");
-
-  min-height: 200px;
-  
-   /* Center and scale the image nicely */
-  background-position: center;
+  background-image: url(../../assets/images/webpage-background.jpg);
   background-repeat: no-repeat;
-  background-size: cover;
-  
-    /* Needed to position the navbar */
-  position: relative;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding:0;
+  background-size: 100% 100%;
+  }
+
+.container{
+    background: white;
+    margin:10px;
+    line-height:1.5;
+    padding:0;
+    border-style: solid;
+    border-color: white;
+    border-width:1px;
+    position: relative;
+    min-height: 100vh;
 }
 
-/* Position the navbar container inside the image */
-.container {
-  position: absolute;
-  margin: 0 auto;
-  width: 100%;
-  bottom: 0;
+#header img{
+  width:100%;
+  height:auto;
+  display:block;
+  margin-left:auto;
+  margin-right:auto;
+ }
+
+/*Beginning of Navigation Bar*/
+
+#header nav{
+  width:100%;
+  margin:0px auto;
 }
 
-
-
-/* Create two columns/boxes that floats next to each other */
-.topnav {
+#header ul {
+  list-style-type: none;
+  margin: 0;
+  padding:0px;
   overflow: hidden;
   background-color: black;
 }
 
-.topnav a {
+#header li {
   float: left;
+  margin-left: 10px;
+}
+
+#header li a {
+  display: block;
   color: white;
   text-align: center;
-  padding: 12px;
+  padding: 8px 8px;
   text-decoration: none;
-  font-size: 17px;
-  width: 200px
 }
 
-.topnav a:hover {
-  background-color: #EBE6E6;
-  color: black;
+#header li a:hover {
+  background-color: lightgray;
 }
 
-.topnav a.active {
+/*End of navigation bar*/
+
+#content{
+  padding:15px;
+  padding-bottom: 1.5rem;
+}
+
+.headings{
+    color: Blue;
+}
+
+dfn{
+  text-decoration: underline;
+}
+
+h2{
+    font-weight: bold;
+}
+
+
+h4{
+    font-variant: small-caps;
+}
+
+.image-1{
+    float: right;
+    border: 1px solid black;
+    margin: 0 15px 15px 15px;
+}
+
+.alert{
+    /*background: DodgerBlue;
+    overflow: auto;
+    padding: 10px;*/
+    color: grey;
+    }
+
+footer{
   background-color: black;
-  color: white;
+  /*position:absolute;*/
+  bottom: 0;
+  width:100%;
+  height: 1.5rem;
 }
 
-article {
-  float: left;
-  padding: 20px;
-  width: 100%;
-  background-color: white;
-  height: 300px; /* only for demonstration, should be removed */
-}
-
-/* Clear floats after the columns */
-section:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Style the footer */
-footer {
-  background-color: black;
-  padding: 2px;
+#footer h6{
+  margin-left: 15px;
   text-align: left;
   color: white;
 }
 
-/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
-@media (max-width: 600px) {
-  topnav, article {
-    width: 100%;
-    height: auto;
-  }
+#footer a{
+  color:blue;
+  list-style-type:none;
 }
-
-
