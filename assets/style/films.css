@@ -26,7 +26,7 @@ h4 {
     text-align: center;
 }
 
-p.main {
+.main {
     text-align: left;
     color: white;
 
@@ -80,10 +80,11 @@ ul {
 }
 
 a:link {
-  color: green;
+  color: black;
   background-color: transparent;
   text-decoration: none;
 }
+
 a:visited {
   color: pink;
   background-color: transparent;
