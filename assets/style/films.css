@@ -1,0 +1,101 @@
+body {
+    background-image: url("DJI_0068.JPG");
+    background-size: cover;
+
+}
+
+/*video {
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+}*/
+
+
+
+h1 {
+    color: black;
+    text-align: center;
+    font-family: Garamond, serif;
+}
+
+h4 {
+    font-style: italic;
+    text-align: center;
+}
+
+p.main {
+    text-align: left;
+    color: white;
+
+    
+}
+
+.topnav {
+  position: relative;
+  overflow: hidden;
+  background-color: transparent;
+}
+
+.topnav a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: gray;
+  color: black;
+  
+}
+
+.topnav a:visited {
+	color: black;
+}
+
+.topnav a.active {
+  background-color: #4CAF50;
+  color: black;
+}
+ 
+ .topnav-centered a {
+  position: relative;
+  top: 0;
+  left: 0;
+  transform: none;
+}
+
+ul {
+  list-style-type: square;
+  color: white;
+  font-size: 22px;
+  position:absolute; 
+  left:80px; 
+  
+}
+
+a:link {
+  color: green;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:visited {
+  color: pink;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:hover {
+  color: red;
+  background-color: transparent;
+  text-decoration: underline;
+}
+a:active {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: underline;
+}
