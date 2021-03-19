@@ -3,14 +3,8 @@
 <title>Films</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<!--<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
 <link rel="stylesheet" href="assets/style/films.css">
-<style>
-body {font-family: "Lato", sans-serif}
-.mySlides {display: none}
-</style>
+
 
 
 <body>
@@ -19,14 +13,19 @@ body {font-family: "Lato", sans-serif}
 <div class="topnav">
 <div class="topnav-centered">
 
-     <!-- <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a> -->
-    <a class="nav" href="main.html">Home</a>
+     
+    <a class="nav" href="Main.html">Home</a>
     <a href="tvshows.html" class="">TV Shows</a>
     <a href="actors.html" class="">Actors</a>
     <a href="cities.html" class="">Cities</a> 
     
 </div>
   </div>
+  
+  <form action="search.asp" method="post" name="searchForm" id="searchForm">
+          <input type="text" placeholder="Arkansas Movie..." name="SearchText">
+          <a href="#" onclick="document.getElementById('searchForm').submit();"><i class="fa fa-search"></i></a>
+        </form>
 
 
 
@@ -36,7 +35,47 @@ body {font-family: "Lato", sans-serif}
       <p class="main">These are films that have been shot in the state of Arkansas.</p><br>
 
       <ul>
-        <li><a href="https://www.themoviedb.org/movie/19382-biloxi-blues?language=en-US">Biloxi Blues</li></a><br><!-- OnClick for each TV show -->
-        <li><a href="https://www.themoviedb.org/movie/31581-bloody-mama?language=en-US">Bloody Mama </li></a><br> <!-- OnClick for each TV show -->
-        <li class="w3-padding">Film #3 </li><br>
+        <li><a href="https://www.themoviedb.org/movie/19382-biloxi-blues?language=en-US">Biloxi Blues (1988)</li></a><br><!-- OnClick for each TV show -->
+        <li><a href="https://www.themoviedb.org/movie/31581-bloody-mama?language=en-US">Bloody Mama (1970) </li></a><br> <!-- OnClick for each TV show -->
+        <li><a href="https://www.themoviedb.org/movie/18480-br-no?language=en-US">Br&uuml;no (2009) </li><br>
+        <li><a href="https://www.themoviedb.org/movie/7547-come-early-morning?language=en-US">Come Early Morning (2006)</li><br>
+        <li><a href="https://www.themoviedb.org/movie/33557-daddy-and-them?language=en-US">Daddy and Them (2001) </a> - Little Rock, Arkansas</li><br>
+        <li><a href="https://www.themoviedb.org/movie/9621-elizabethtown?language=en-US">Elizabethtown (205)</a> - Eureka Springs, Arkansas </li><br>
+        <li><a href="https://www.themoviedb.org/movie/49855-end-of-the-line?language=en-US">End of the Line (1987)</a> - Clifford, Arkansas </li><br>
+        <li><a href="https://www.themoviedb.org/movie/441776-the-ernest-green-story?language=en-US">The Ernest Green Story (1993)</a> - Little Rock, Arkansas</li><br>
+        <li><a href="https://www.themoviedb.org/movie/21849-a-face-in-the-crowd?language=en-US">A Face in the Crowd (1957)</a> - Piggot, Arkansas</li><br>
+        <li><a href="https://www.themoviedb.org/movie/37233-the-firm?language=en-US">The Firm (1993)</a> - West Memphis, Arkansas</li><br>
+        <li><a href="https://www.themoviedb.org/movie/42706-frank-jesse?language=en-US">Frank & Jesse (1995)</a> - Fayetteville, Arkansas</li><br>
+        <li><a href="https://www.themoviedb.org/movie/347126-god-s-not-dead-2?language=en-US">God's Not Dead 2 (2016)</a> - Benton, Arkansas</li><br>
+        <li><a href="https://www.themoviedb.org/movie/454286-god-s-not-dead-3?language=en-US">God's Not Dead: A Light in Darkness (2018)</a> - Conway, Arkansas</li><br>
+        <li><a href="https://www.themoviedb.org/movie/11465-great-balls-of-fire?language=en-US">Great Balls of Fire (1989)</a> - Marion, Arkansas</li><br>
+        <li><a href="https://www.themoviedb.org/movie/1842-the-legend-of-boggy-creek?language=en-US">The Legend of Boggy Creek (1972)</a> - Fouke, Arkansas</li><br>
+        <li><a href="https://www.themoviedb.org/movie/596053-max-winslow-and-the-house-of-secrets?language=en-US">Max Winslow and the House of Secrets (2020)</a> - Bentonville, Arkansas</li><br>
+        <li><a href="https://www.themoviedb.org/movie/103731-mud?language=en-US">Mud (2013)</a> - Dewitt, Arkansas </li><br>
+        <li><a href="https://www.themoviedb.org/movie/21128-one-false-move?language=en-US">One False Move (1992)</a> - Star City, Arkansas </li><br>
+        <li><a href="https://www.themoviedb.org/movie/479381-the-revival?language=en-US">The Revival (2017)</a> - Hot Springs, Arkansas </li><br>
+        <li><a href="https://www.themoviedb.org/movie/56162-rosalie-goes-shopping?language=en-US">Rosalie Goes Shopping (1989)</a> - Stuggart, Arkansas </li><br>
+        <li><a href="https://www.themoviedb.org/movie/52681-september-30-1955?language=en-US">September 30, 1955 (1977)</a> - Conway, Arkansas </li><br>
+        <li><a href="https://www.themoviedb.org/movie/12498-sling-blade?language=en-US">Sling Blade (1996)</a> - Benton, Arkansas </li><br>
+        <li><a href="https://www.themoviedb.org/movie/698734-smoke-in-the-wind?language=en-US">Smoke in the Wind (1975)</a> - Winslow, Arkansas </li><br>
+        <li><a href="https://www.themoviedb.org/movie/698734-smoke-in-the-wind?language=en-US">So Sad About Gloria (1973)</a> - Little Rock, Arkansas </li><br>
+        <li><a href="https://www.themoviedb.org/movie/26522-a-soldier-s-story?language=en-US">A Soldier's Story (1984)</a> - North Little Rock, Arkansas </li><br>
+        <li><a href="https://www.themoviedb.org/movie/21338-stone-cold?language=en-US">Stone Cold (1995)</a> - Litle Rock, Arkansas </li><br>
+        <li><a href="https://www.themoviedb.org/movie/486980-terror-at-black-falls?language=en-US">Terror at Black Falls (1962)</a> - Scotland, Arkansas </li><br>
+        <li><a href="https://www.themoviedb.org/movie/287084-the-town-that-dreaded-sundown?language=en-US">The Town That Dreaded Sundown (2014)</a> - Texarkana, Arkansas </li><br>
+        <li><a href="https://www.themoviedb.org/movie/48197-the-town-that-dreaded-sundown?language=en-US">The Town That Dreaded Sundown (1976)</a> - Texarkana, Arkansas </li><br>
+        <li><a href="https://www.themoviedb.org/movie/69-walk-the-line?language=en-US">Walk the Line (2005)</a> - Dyess, Arkansas </li><br>
+        <li><a href="https://www.themoviedb.org/movie/44582-war-eagle-arkansas?language=en-US">War Eagle, Arkansas (2007)</a> - Eureka Springs, Arkansas </li><br>
+        <li><a href="https://www.themoviedb.org/movie/26408-the-war-room?language=en-US">The War Room (1993)</a> - Little Rock, Arkansas </li><br>
+        <li><a href="https://www.themoviedb.org/movie/47701-the-white-river-kid?language=en-US">The White River Kid (1999)</a> - Hot Springs, Arkansas </li><br>
+        <li><a href="https://www.themoviedb.org/movie/38225-wild-america?language=en-US">Wild America (1997)</a> - Fort Smith, Arkansas </li><br>
+        <li>Wonder Valley (1953)</li> - Springdale, Arkansas <br>
+        
       </ul>
+      
+     <footer id="footer"
+     
+
+       © 2020 Corredur Vaden - <a href="#footer" title="Return to top of page">Back to Top</a>
+      
+    </footer>

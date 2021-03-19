@@ -1,15 +1,32 @@
-html{
+body, html {
+  height: auto;
+  width: 100%;
+  margin: 0;
+}
+
+.bg {
+  background-image: url(DJI_0068.jpg);
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/*html{
   position: relative;
   min-height: 100%;
 }
 
 body {
     background-image: url(DJI_0068.JPG);
+    font-family: "Lato", sans-serif;
     background-repeat: no-repeat;
     margin: 0;
     padding:0;
     background-size: 100% 100%;
+    
 }
+*/
 
 /*video {
   object-fit: cover;
@@ -33,7 +50,7 @@ h4 {
     text-align: center;
 }
 
-p.main  {
+.main  {
     text-align: left;
     color: white;
     
@@ -61,7 +78,7 @@ p.main  {
   color: black;
 }
 
-.topnav a.active {
+.topnav .active {
   background-color: #4CAF50;
   color: black;
 }
