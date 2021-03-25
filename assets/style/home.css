@@ -47,11 +47,8 @@ body {
 }*/
 
 body {
-  min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-image: url(green-plant-leaves-3337202.jpg);
+  
+    background-image: url(DJI_0068.JPG);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -70,9 +67,8 @@ h4 {
 
 .main  {
     text-align: left;
-    color: white;
-    background-color: rgba(0, 0, 0, 0.8);
-    font-size: 48px;
+    color: blue;
+    
     
 }
 
