@@ -46,12 +46,17 @@ body {
   left: 0;
 }*/
 
+html{
+  position: relative;
+  min-height: 100%;
+}
+
 body {
-  
     background-image: url(DJI_0068.JPG);
-    background-position: center;
-    background-size: cover;
     background-repeat: no-repeat;
+    margin: 0;
+    padding:0;
+    background-size: 100% 100%;
 }
 
 h1 {
