@@ -1,20 +1,26 @@
 <!DOCTYPE html>
 
-<html lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
 <title>The Arkansas Movie Database</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="keywords" content="HTML, CSS, XML, JavaScript">
 <link rel="stylesheet" href = "assets/style/home.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
-<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>-->
+
+</head>
 
 
 <body>
   
-
-
-
 <!-- Navbar -->
+
 <div class="topnav">
 <div class="topnav-centered">
 
@@ -27,147 +33,39 @@
     
 </div>
   </div>
-    <form action="search.asp" method="post" name="searchForm" id="searchForm">
-          <input type="text" placeholder="Arkansas Film..." name="SearchText">
-          <a href="#" onclick="document.getElementById('searchForm').submit();"><i class="fa fa-search"></i></a>
-        </form>
-    </div>
-    
-    <!-- <p>
-      "Search an Arkansas Film"
-      <input type="text" id="name"
-    </p>
-    <p>
-      <button onclick="Search()">Search for ...</button>
-    </p>
-    
-    <div id="url1"></div>
-    <br>
-    <br>
-    <div id="title1"></div>
-    <div id="overview1"></div>
-    <img id="image1"> -->
-    
+   
+   
+   
+
+   <form action="https://www.themoviedb.org/search?query=" method="POST" target="_blank">
+    <input type="text" name="searchText" value=""/>
+    <input type="submit">
+    <input id="siteSearchUrl" name="siteSearchUrl" type="hidden" value="https://api.themoviedb.org/3/search/keyword?api_key=09a7f2a2dddc210e0b53ee4c5170bd57&page=1
+&amp;sites=www.themoviedb.org&amp;q=testing">
+</form>
+
+
+        
 
 
   <!-- The Home Section -->
-  
-  <!--<div class="" style="max-width:800px" id="home">-->
   
     <h1>The Arkansas Movie Database</h1>
     <h4>The Natural State<h4>
     
     <p class="main">The Arkansas Movie Database was created to highlight....</p>
     
-        </div>
-        </div>
-      </div>
-    </div>
-  </div>
 
     
 <!-- End Page Content -->
-</div>
-
-
-
-
 <!-- Footer-->
 
-
-<footer class="image1">Powered by <a href="https://www.themoviedb.org/"> 
-<!--<img src="tmdblogo1.svg"> -->
-</p>
-</a>
-</footer>
-
-
-
-<!--<script>
-  function Search() {
-    
-    /* Get the movie name for the form */
-    var moviename = document.getElementById("moviename").value;
-    
-    /* Build up the parameters for the URL */
-    var api_key = "1c3df5b73705f054ad8dfe8bc03f7f33";
-    var language = "en-US";
-    var page = "1";
-    var include_adult = "false";
-    var query = encodeURI(moviename);  /* encode the movename since it might have blanks */  
-    var myURL = "https://api.themoviedb.org/3/search/movie?api_key=" + api_key + "&language=" + language + "&query=" + query + "&page="  + page + "&include_adult=" + include_adult;
-
-    /* Display the URL */
-    document.getElementById("url1").innerHTML = "URL:" + myURL;
-    
-    /* We will use AJAX to access the database, and JQuery to simplify the call */
-    /* See:
-        https://www.w3schools.com/js/js_ajax_intro.asp         - the entire module
-        https://www.w3schools.com/jquery/default.asp           - the entire module
-        https://www.w3schools.com/jquery/jquery_ajax_intro.asp - the entire module
-    */
-    
-    /* AJAX Method - Use GET since the parameters are in the URL */
-    var myMethod = "GET";
-
-    /* Make sure the document is ready */
-    $(document).ready(function() { 
-
-    /* Perform AJAX call - Pass to it the Method (GET) and the URL*/
-    $.ajax({
-      method: myMethod,
-      url: myURL
-    })
-
-        /* AJAX complete - result is in msg */
-        .done(function(msg) {
-
-        /* Your code to process the result goes here */          
-
-        /* Loop through the first 25 results */
-            for (i = 0; i < 25; i++) {
-                
-                /* Display the result */
-                if (i < msg.results.length) {
-
-                    /* Set the Title to Visible and set title to value in database */
-                    document.getElementById("title" + i).style.display = "block";
-                    document.getElementById("title" + i).innerHTML = "Title: " + msg.results[i].original_title;
-
-                    /* Set the Overview to Visible and set title to value in database */
-                    document.getElementById("overview" + i).style.display = "block";
-                    document.getElementById("overview" + i).innerHTML = "Overview: " + msg.results[i].overview;
-
-                    /* Some movies don't have a poster - null is returned */
-                    if (msg.results[i].poster_path != null) {
-                        document.getElementById("image" + i).style.display = "block";
-                        document.getElementById("image" + i).src = "https://image.tmdb.org/t/p/w500" + msg.results[i].poster_path;
-                    }
-                    else
-
-                    /* null move poster - don't display a empty value */
-                    {
-                        document.getElementById("image" + i).src = "";       
-                        document.getElementById("image" + i).style.display = "none";
-                    }
-                }
-                else
-                {
-                    /* Less that 25 movies returned - blank out the rest of the values */
-                    document.getElementById("title" + i).innerHTML = "";
-                    document.getElementById("title" + i).style.display = "none";
-                    document.getElementById("overview" + i).innerHTML = "";
-                    document.getElementById("overview" + i).style.display = "none";
-                    document.getElementById("image" + i).src = "";
-                    document.getElementById("image" + i).style.display = "none";
-                }
-            }
-        });
-    });
-}
+<footer class="image1">
+  <p>Powered by <a href="https://www.themoviedb.org/" target = "_blank"> <img src = "tmdblogo1.svg" alt="The Movie Database Logo" style="width:100px; height:25px;"> </a>
   
-</script>
--->
+  </p>
+  </footer>
+
 
 
 </body>

@@ -70,6 +70,7 @@ h4 {
     text-align: center;
 }
 
+
 .main  {
     text-align: left;
     color: blue;
@@ -111,19 +112,33 @@ h4 {
   transform: none;
 }
 
-.footer {
+/*.footer {
   position: relative;
   height: 20px;
   width: 30px;
+}*/
+
+footer {
+  text-align: center;
+  background-color: #333;
+  color: #fff;
+  font-family: Arial;
+  
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
 
-.image1 { 
+
+
+
+/*.image1 { 
   
   margin-left: auto;
   margin-right: auto;
   height: 30%;
-  width:50%;
+  width:100%;
   
-}
+}*/
 
 
