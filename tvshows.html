@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-<title>TV Shows</title>
+<title>Films</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-
-
+<link rel="stylesheet" href="assets/style/shows.css">
 
 
 
@@ -20,16 +19,59 @@
     
 </div>
   </div>
+  
+   <form action="https://www.themoviedb.org/search?query=" method="POST" target="_blank">
+    <input type="text" name="searchText" value=""/>
+    <input type="submit">
+    <input id="siteSearchUrl" name="siteSearchUrl" type="hidden" value="https://api.themoviedb.org/3/search/keyword?api_key=09a7f2a2dddc210e0b53ee4c5170bd57&page=1
+&amp;sites=www.themoviedb.org&amp;q=testing">
+</form>
     
     
     <!-- The TV Show Section -->
-  <div class="w3-black" id="tvshows">
-    <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
-      <h2 class="w3-wide w3-center">TV Shows</h2>
-      <p class="w3-opacity w3-center">These are TV Shows that have been shot in the state of Arkansas<i></i></p><br>
+  <h1>TV Shows of Arkansas</h1><br>
+	   
+      <p class="main">These are TV Shows that have been shot in the state of Arkansas.</p><br>
 
-      <ul class="w3-ul w3-border w3-white w3-text-grey">
-        <li class="w3-padding">TV Show # 1 </li> <!-- OnClick for each TV show -->
-        <li class="w3-padding">TV Show # 2 </li> <!-- OnClick for each TV show -->
-        <li class="w3-padding">TV Show #3 </li>
+      <ul>
+        <li><a href="https://www.themoviedb.org/tv/5985-19-kids-and-counting">19 Kids and Counting (2008)</a> - Tontitown, Arkansas</li><br><!-- OnClick for each TV show -->
+        <li><a href="https://www.themoviedb.org/tv/65070-cheer-perfection">Cheer Perfection (2012) </a> - Sherwood, Arkansas</li><br> <!-- OnClick for each TV show -->
+        <li><a href="https://www.themoviedb.org/tv/66156-jill-jessa-counting-on">Counting On (2016)</a> - Tontitown, Arkansas </li><br>
+        <li><a href="https://www.themoviedb.org/tv/390-evening-shade">Evening Shade (1990)</a> - Hot Springs, Arkansas</li><br>
+        <li><a href="https://www.themoviedb.org/tv/40340-last-shot-with-judge-gunn">Last Shot with Judge Gunn (2012) </a> - Washington County, Arkansas</li><br>
+        <li><a href="">Little Britches on the Road (2013)</a> - Searcy, Arkansas </li><br>
+        <li><a href="https://www.themoviedb.org/tv/4406-the-simple-life">The Simple Life (2003)</a> - Altus, Arkansas </li><br>
+        <li><a href="https://www.themoviedb.org/tv/46648-true-detective">True Detective (2014)</a> - Fayetteville, Arkansas</li><br>
+        
       </ul>
+      
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+      
+<script>
+//Get the button
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+
+<footer class="image1">
+  <p>Powered by <a href="https://www.themoviedb.org/" target = "_blank"> <img src = "tmdblogo1.svg" alt="The Movie Database Logo" style="width:100px; height:25px;"> </a>
+  
+  </p>
+  </footer>
