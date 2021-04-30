@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<title>Films</title>
+<title>AR Films</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="assets/style/films.css">
@@ -14,82 +14,111 @@
 <div class="topnav-centered">
 
      
-    <a class="nav" href="Main.html">Home</a>
+    <a href="Main.html" class="">Home</a>
+    <a href="TestMovie.html" class="">Movie Search</a>
     <a href="tvshows.html" class="">TV Shows</a>
     <a href="actors.html" class="">Actors</a>
-    <a href="cities.html" class="">Cities</a> 
+    <a href="TestPeople.html" class="">People Search</a>  
     
 </div>
   </div>
   
- <form action="https://www.themoviedb.org/search?query=" method="POST" target="_blank">
-    <input type="text" name="searchText" value=""/>
-    <input type="submit">
-    <input id="siteSearchUrl" name="siteSearchUrl" type="hidden" value="https://api.themoviedb.org/3/search/keyword?api_key=09a7f2a2dddc210e0b53ee4c5170bd57&page=1
-&amp;sites=www.themoviedb.org&amp;q=testing">
-</form>
-
 
 
 <!-- The Films Section -->
        <h1>Films of Arkansas</h1><br>
 	   
-      <p class="main">These are films that have been shot in the state of Arkansas.</p><br>
+      <p class="main">These are films that have been shot in or about the state of Arkansas.</p><br>
 
       <ul>
-        <li><a href="https://www.themoviedb.org/movie/19382-biloxi-blues?language=en-US">Biloxi Blues (1988)</li></a><br><!-- OnClick for each TV show -->
-        <li><a href="https://www.themoviedb.org/movie/31581-bloody-mama?language=en-US">Bloody Mama (1970) </li></a><br> <!-- OnClick for each TV show -->
-        <li><a href="https://www.themoviedb.org/movie/18480-br-no?language=en-US">Br&uuml;no (2009) </li><br>
-        <li><a href="https://www.themoviedb.org/movie/7547-come-early-morning?language=en-US">Come Early Morning (2006)</li><br>
-        <li><a href="https://www.themoviedb.org/movie/33557-daddy-and-them?language=en-US">Daddy and Them (2001) </a> - Little Rock, Arkansas</li><br>
-        <li><a href="https://www.themoviedb.org/movie/9621-elizabethtown?language=en-US">Elizabethtown (205)</a> - Eureka Springs, Arkansas </li><br>
-        <li><a href="https://www.themoviedb.org/movie/49855-end-of-the-line?language=en-US">End of the Line (1987)</a> - Clifford, Arkansas </li><br>
-        <li><a href="https://www.themoviedb.org/movie/441776-the-ernest-green-story?language=en-US">The Ernest Green Story (1993)</a> - Little Rock, Arkansas</li><br>
-        <li><a href="https://www.themoviedb.org/movie/21849-a-face-in-the-crowd?language=en-US">A Face in the Crowd (1957)</a> - Piggot, Arkansas</li><br>
-        <li><a href="https://www.themoviedb.org/movie/37233-the-firm?language=en-US">The Firm (1993)</a> - West Memphis, Arkansas</li><br>
-        <li><a href="https://www.themoviedb.org/movie/42706-frank-jesse?language=en-US">Frank & Jesse (1995)</a> - Fayetteville, Arkansas</li><br>
-        <li><a href="https://www.themoviedb.org/movie/347126-god-s-not-dead-2?language=en-US">God's Not Dead 2 (2016)</a> - Benton, Arkansas</li><br>
-        <li><a href="https://www.themoviedb.org/movie/454286-god-s-not-dead-3?language=en-US">God's Not Dead: A Light in Darkness (2018)</a> - Conway, Arkansas</li><br>
-        <li><a href="https://www.themoviedb.org/movie/11465-great-balls-of-fire?language=en-US">Great Balls of Fire (1989)</a> - Marion, Arkansas</li><br>
-        <li><a href="https://www.themoviedb.org/movie/1842-the-legend-of-boggy-creek?language=en-US">The Legend of Boggy Creek (1972)</a> - Fouke, Arkansas</li><br>
-        <li><a href="https://www.themoviedb.org/movie/596053-max-winslow-and-the-house-of-secrets?language=en-US">Max Winslow and the House of Secrets (2020)</a> - Bentonville, Arkansas</li><br>
-        <li><a href="https://www.themoviedb.org/movie/103731-mud?language=en-US">Mud (2013)</a> - Dewitt, Arkansas </li><br>
-        <li><a href="https://www.themoviedb.org/movie/21128-one-false-move?language=en-US">One False Move (1992)</a> - Star City, Arkansas </li><br>
-        <li><a href="https://www.themoviedb.org/movie/479381-the-revival?language=en-US">The Revival (2017)</a> - Hot Springs, Arkansas </li><br>
-        <li><a href="https://www.themoviedb.org/movie/56162-rosalie-goes-shopping?language=en-US">Rosalie Goes Shopping (1989)</a> - Stuggart, Arkansas </li><br>
-        <li><a href="https://www.themoviedb.org/movie/52681-september-30-1955?language=en-US">September 30, 1955 (1977)</a> - Conway, Arkansas </li><br>
-        <li><a href="https://www.themoviedb.org/movie/12498-sling-blade?language=en-US">Sling Blade (1996)</a> - Benton, Arkansas </li><br>
-        <li><a href="https://www.themoviedb.org/movie/698734-smoke-in-the-wind?language=en-US">Smoke in the Wind (1975)</a> - Winslow, Arkansas </li><br>
-        <li><a href="https://www.themoviedb.org/movie/698734-smoke-in-the-wind?language=en-US">So Sad About Gloria (1973)</a> - Little Rock, Arkansas </li><br>
-        <li><a href="https://www.themoviedb.org/movie/26522-a-soldier-s-story?language=en-US">A Soldier's Story (1984)</a> - North Little Rock, Arkansas </li><br>
-        <li><a href="https://www.themoviedb.org/movie/21338-stone-cold?language=en-US">Stone Cold (1995)</a> - Litle Rock, Arkansas </li><br>
-        <li><a href="https://www.themoviedb.org/movie/486980-terror-at-black-falls?language=en-US">Terror at Black Falls (1962)</a> - Scotland, Arkansas </li><br>
-        <li><a href="https://www.themoviedb.org/movie/287084-the-town-that-dreaded-sundown?language=en-US">The Town That Dreaded Sundown (2014)</a> - Texarkana, Arkansas </li><br>
-        <li><a href="https://www.themoviedb.org/movie/48197-the-town-that-dreaded-sundown?language=en-US">The Town That Dreaded Sundown (1976)</a> - Texarkana, Arkansas </li><br>
-        <li><a href="https://www.themoviedb.org/movie/69-walk-the-line?language=en-US">Walk the Line (2005)</a> - Dyess, Arkansas </li><br>
-        <li><a href="https://www.themoviedb.org/movie/44582-war-eagle-arkansas?language=en-US">War Eagle, Arkansas (2007)</a> - Eureka Springs, Arkansas </li><br>
-        <li><a href="https://www.themoviedb.org/movie/26408-the-war-room?language=en-US">The War Room (1993)</a> - Little Rock, Arkansas </li><br>
-        <li><a href="https://www.themoviedb.org/movie/47701-the-white-river-kid?language=en-US">The White River Kid (1999)</a> - Hot Springs, Arkansas </li><br>
-        <li><a href="https://www.themoviedb.org/movie/38225-wild-america?language=en-US">Wild America (1997)</a> - Fort Smith, Arkansas </li><br>
-        <li>Wonder Valley (1953)</li> - Springdale, Arkansas <br>
+        <li class="ln-a listNavShow"><a href="#" onclick="browseMovieId(19382)">Biloxi Blues (1988) </a> - Fort Smith, Arkansas</li><br>
+        <li class="ln-b listNavShow"><a href="#" onclick="browseMovieId(31581)">Bloody Mama (1969)</a> - Little Rock, Arkansas</li><br>
+        <li class="ln-c listNavShow"><a href="#" onclick="browseMovieId(18480)">Br&uuml;no (2009)</a> - Fort Smith, Arkansas </li><br>
+        <li class="ln-c listNavShow"><a href="#" onclick="browseMovieId(7547)">Come Early Morning (2006)</a> - Lonoke, Arkansas</li><br>
+        <li class="ln-c listNavShow"><a href="#" onclick="browseMovieId(33557)">Daddy and Them (2001) </a> - Little Rock, Arkansas</li><br>
+        <li class="ln-c listNavShow"><a href="#" onclick="browseMovieId(9621)">Elizabethtown (2005)</a> - Eureka Springs, Arkansas </li><br>
+        <li class="ln-c listNavShow"><a href="#" onclick="browseMovieId(12791)">End of the Line (1987)</a> - Clifford, Arkansas </li><br>
+        <li class="ln-c listNavShow"><a href="#" onclick="browseMovieId(441776)">The Ernest Green Story (1993)</a> - Little Rock, Arkansas</li><br>
+        <li class="ln-c listNavShow"><a href="#" onclick="browseMovieId(21849)">A Face in the Crowd (1957)</a> - Piggot, Arkansas</li><br>
+        <li class="ln-c listNavShow"><a href="#" onclick="browseMovieId(37233)">The Firm (1993)</a> - West Memphis, Arkansas</li><br>
+        <li class="ln-c listNavShow"><a href="#" onclick="browseMovieId(42706)">Frank & Jesse (1995)</a> - Fayetteville, Arkansas</li><br>
+        <li class="ln-c listNavShow"><a href="#" onclick="browseMovieId(347126)">God's Not Dead 2 (2016)</a> - Benton, Arkansas</li><br>
+        <li class="ln-c listNavShow"><a href="#" onclick="browseMovieId(454286)">God's Not Dead: A Light in Darkness (2018)</a> - Conway, Arkansas</li><br>
+        <li class="ln-c listNavShow"><a href="#" onclick="browseMovieId(11465)">Great Balls of Fire (1989)</a> - Marion, Arkansas</li><br>
+        <li class="ln-c listNavShow"><a href="#" onclick="browseMovieId(1842)">The Legend of Boggy Creek (1972)</a> - Fouke, Arkansas</li><br>
+        <li class="ln-c listNavShow"><a href="#" onclick="browseMovieId(596053)">Max Winslow and the House of Secrets (2020)</a> - Bentonville, Arkansas</li><br>
+        <li class="ln-c listNavShow"><a href="#" onclick="browseMovieId(103731)">Mud (2013)</a> - Dewitt, Arkansas </li><br>
+        <li class="ln-c listNavShow"><a href="#" onclick="browseMovieId(21128)">One False Move (1992)</a> - Star City, Arkansas </li><br>
+        <li class="ln-c listNavShow"><a href="#" onclick="browseMovieId(479381)">The Revival (2017)</a> - Hot Springs, Arkansas </li><br>
+        <li class="ln-c listNavShow"><a href="#" onclick="browseMovieId(56162)">Rosalie Goes Shopping (1989)</a> - Stuggart, Arkansas </li><br>
+        <li class="ln-c listNavShow"><a href="#" onclick="browseMovieId(52681)">September 30, 1955 (1977)</a> - Conway, Arkansas </li><br>
+        <li class="ln-c listNavShow"><a href="#" onclick="browseMovieId(12498)">Sling Blade (1996)</a> - Benton, Arkansas </li><br>
+        <li class="ln-c listNavShow"><a href="#" onclick="browseMovieId(698734)">Smoke in the Wind (1975)</a> - Winslow, Arkansas </li><br>
+        <li class="ln-c listNavShow"><a href="#" onclick="browseMovieId(105701)">So Sad About Gloria (1973)</a> - Little Rock, Arkansas </li><br>
+        <li class="ln-c listNavShow"><a href="#" onclick="browseMovieId(486980)">A Soldier's Story (1984)</a> - North Little Rock, Arkansas </li><br>
+        <li class="ln-c listNavShow"><a href="#" onclick="browseMovieId(31046)">Stone Cold (1995)</a> - Litle Rock, Arkansas </li><br>
+        <li class="ln-c listNavShow"><a href="#" onclick="browseMovieId(486980)">Terror at Black Falls (1962)</a> - Scotland, Arkansas </li><br>
+        <li class="ln-c listNavShow"><a href="#" onclick="browseMovieId(287084)">The Town That Dreaded Sundown (2014)</a> - Texarkana, Arkansas </li><br>
+        <!--<li class="ln-c listNavShow"><a href="#" onclick="browseMovieId(7547)">The Town That Dreaded Sundown (1976)</a> - Texarkana, Arkansas </li><br>-->
+        <li class="ln-c listNavShow"><a href="#" onclick="browseMovieId(69)">Walk the Line (2005)</a> - Dyess, Arkansas </li><br>
+        <li class="ln-c listNavShow"><a href="#" onclick="browseMovieId(44582)">War Eagle, Arkansas (2007)</a> - Eureka Springs, Arkansas </li><br>
+        <li class="ln-c listNavShow"><a href="#" onclick="browseMovieId(26408)">The War Room (1993)</a> - Little Rock, Arkansas </li><br>
+        <li class="ln-c listNavShow"><a href="#" onclick="browseMovieId(47701)">The White River Kid (1999)</a> - Hot Springs, Arkansas </li><br>
+        <li class="ln-c listNavShow"><a href="#" onclick="browseMovieId(38225)">Wild America (1997)</a> - Fort Smith, Arkansas </li><br>
+        <li class="ln-c listNavShow"><a href="#" onclick="browseMovieId(411326)">Wonder Valley (1953)</a> - Springdale, Arkansas</li><br>
         
       </ul>
       
-<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 
+
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="assets/scripts/TEST.js"></script>
+    <script src="assets/scripts/jquery-listnav.js"></script>
+    <script>
+      // Fuction MovieIDSearch will pull the movie id and opens a new window that calls function MovieDtlCrdSearch on load to display the movie details
+      function browseMovieId(idNbr) {
+        //Move the movie id to variable onloadMovieId
+        var onloadMovieId = idNbr;	
+        //localStorage object stores data with no expiration date. 
+        //The data will not be deleted when the browser is closed, and will be available the next day, week, or year
+        localStorage.setItem("movieIdPass", onloadMovieId);
+        //The open() method opens a new browser window, or a new tab
+        window.open("TEST.html", "_self");
+        }
+      //custom message for letters with no matching results
+      $(function(){
+      	$('.demoTwo').listnav({
+      	  includeAll: false,
+      	  noMatchText: 'There are no matching entries.'
+      	});
+      	$('.demo a').click(function(e) {
+      	  e.preventDefault();
+      	});
+      });
+    </script>
+    
+    
       
+<button onclick="topFunction()" id="myBtn1" title="Go to top">Top</button>
+
+<footer class="image1">
+  <p>Powered by <a href="https://www.themoviedb.org/" target = "_blank"> <img src = "tmdblogo1.svg" alt="The Movie Database Logo" style="width:100px; height:25px;"> </a>
+  
+  </p>
+  </footer>
+
 <script>
 //Get the button
-var mybutton = document.getElementById("myBtn");
+var mybutton1 = document.getElementById("myBtn1");
 
 // When the user scrolls down 20px from the top of the document, show the button
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    mybutton.style.display = "block";
+    mybutton1.style.display = "block";
   } else {
-    mybutton.style.display = "none";
+    mybutton1.style.display = "none";
   }
 }
 
@@ -100,8 +129,6 @@ function topFunction() {
 }
 </script>
 
-<footer class="image1">
-  <p>Powered by <a href="https://www.themoviedb.org/" target = "_blank"> <img src = "tmdblogo1.svg" alt="The Movie Database Logo" style="width:100px; height:25px;"> </a>
   
-  </p>
-  </footer>
+  </body>
+  </html>

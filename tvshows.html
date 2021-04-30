@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<title>Films</title>
+<title>TV Shows</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="assets/style/shows.css">
@@ -13,19 +13,16 @@
 
      <!-- <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a> -->
     <a class="nav" href="Main.html">Home</a>
-    <a href="Films.html" class="">Films</a>
+    <a class="nav" href="Films.html">Films</a>
+    <a href="TestMovie.html" class="">Movie Search</a>
     <a href="actors.html" class="">Actors</a>
-    <a href="cities.html" class="">Cities</a> 
+    <a href="TestPeople.html" class="">People Search</a>
+   
+     
     
 </div>
   </div>
   
-   <form action="https://www.themoviedb.org/search?query=" method="POST" target="_blank">
-    <input type="text" name="searchText" value=""/>
-    <input type="submit">
-    <input id="siteSearchUrl" name="siteSearchUrl" type="hidden" value="https://api.themoviedb.org/3/search/keyword?api_key=09a7f2a2dddc210e0b53ee4c5170bd57&page=1
-&amp;sites=www.themoviedb.org&amp;q=testing">
-</form>
     
     
     <!-- The TV Show Section -->
@@ -45,30 +42,8 @@
         
       </ul>
       
-<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 
-      
-<script>
-//Get the button
-var mybutton = document.getElementById("myBtn");
 
-// When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function() {scrollFunction()};
-
-function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    mybutton.style.display = "block";
-  } else {
-    mybutton.style.display = "none";
-  }
-}
-
-// When the user clicks on the button, scroll to the top of the document
-function topFunction() {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
-}
-</script>
 
 <footer class="image1">
   <p>Powered by <a href="https://www.themoviedb.org/" target = "_blank"> <img src = "tmdblogo1.svg" alt="The Movie Database Logo" style="width:100px; height:25px;"> </a>

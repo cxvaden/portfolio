@@ -1,0 +1,268 @@
+.topnav {
+  position: relative;
+  overflow: hidden;
+  background-color: transparent;
+}
+
+.topnav a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: gray;
+  color: black;
+  
+}
+
+.topnav a:visited {
+	color: black;
+}
+
+.topnav .active {
+  background-color: #4CAF50;
+  color: black;
+}
+ 
+ .topnav-centered a {
+  position: relative;
+  top: 0;
+  left: 0;
+  transform: none;
+}
+
+
+
+
+.SearchBar {
+    
+  text-align: center;
+  
+}
+
+
+
+
+
+
+
+
+html { 
+  background: url("DJI_0133.JPG") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+h2 {
+  font-size: 350%;
+  text-align: center;
+  color: white;
+}
+
+h3 {
+  font-size: 200%;
+  text-align: center;
+  color: yellow;
+}
+
+h4 {
+  color: white;
+  text-align: center;
+}
+
+p {
+  color:white;
+}
+
+
+#poster_path {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 300px;  
+  height: auto;
+}
+
+#release_date {
+  text-align: center;
+  color: white;
+}
+
+#budget {
+  text-align: center;
+  color: white;
+}
+
+#revenue {
+  text-align: center;
+  color: white;
+}
+
+#runtime {
+  text-align: center;
+  color: white;
+}
+
+strong {
+  text-align: center;
+  color: white;
+}
+
+.movgenres {
+  color: white;
+  text-align: center;
+}
+
+
+
+#overview {
+  color: white;
+  font-size: 20px;
+}
+
+#imdb_id {
+  
+color: white;
+}
+
+
+
+
+
+
+.mttSection, .mttSection:before, .mttSection:after {
+  box-sizing: border-box;
+}
+
+.mttColumn {
+  float: left;
+  width: 23%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+@media screen and (max-width: 650px) {
+  .mttColumn {
+    width: 50%;
+    display: block;
+  }
+}
+
+.mttCard img{
+  width:100%;
+}
+
+/* shadow when hover over text */
+.txtshadow:hover {
+    text-shadow: 2px 2px 8px #808080;
+	cursor:pointer;
+}
+
+/* Style when hover over image */
+.mttCard img:hover {
+  box-shadow: 0 4px 8px 0 #696969;
+  cursor:pointer;
+}
+
+.mttContainer {
+  padding: 0 16px;
+}
+
+.mttContainer::after, .mttRow::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.mttTitle {
+  color: yellow;
+}
+
+.mttButton {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.mttButton:hover {
+  background-color: #555;
+}
+
+#myBtn1 {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: yellow;
+  color: black;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#myBtn1:hover {
+  background-color: #555;
+}
+
+
+
+
+
+
+
+#known_for_department {
+  text-align: center;
+  color: white;
+}
+
+#birthday {
+  text-align: center;
+  color: white;
+}
+
+#deathday {
+  text-align: center;
+  color: white;
+}
+
+#place_of_birth {
+  text-align: center;
+  color: white;
+}
+
+#biography {
+  color: white;
+  font-size: 20px;
+}
+
+#profile_path {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 300px;  
+  height: auto;
+}

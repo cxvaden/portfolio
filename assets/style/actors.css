@@ -1,8 +1,9 @@
-body {
-    background-image: url("DJI_0068.JPG");
-    background-size: cover;
-    font-family: "Lato", sans-serif;
-
+html { 
+  background: url("DJI_0068.JPG") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 /*video {
@@ -25,6 +26,10 @@ h1 {
 h4 {
     font-style: italic;
     text-align: center;
+}
+
+p {
+  color:black;
 }
 
 .main {
@@ -81,7 +86,7 @@ ul {
 }
 
 a:link {
-  color: black;
+  color: white;
   background-color: transparent;
   text-decoration: none;
 }
@@ -115,7 +120,7 @@ footer {
 }
 
 
-#myBtn {
+#myBtn1 {
   display: none;
   position: fixed;
   bottom: 20px;
@@ -124,13 +129,13 @@ footer {
   font-size: 18px;
   border: none;
   outline: none;
-  background-color: red;
-  color: white;
+  background-color: yellow;
+  color: black;
   cursor: pointer;
   padding: 15px;
   border-radius: 4px;
 }
 
-#myBtn:hover {
+#myBtn1:hover {
   background-color: #555;
 }
