@@ -4,9 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Search Films</title>
-    <meta name="description" content="Website is intended to promote the film industry in Arkansas by attracting filmmakers and actors to the state.">
-    <meta name="keywords" content="arkansas, film, movie, actors, celebrities, film festival">
-    <meta name="author" content="Fernando J Amador">
+    
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <!-- External CSS Files -->
@@ -424,14 +422,37 @@
         </div> 
       </div>
     
-    
+ <button onclick="topFunction()" id="myBtn1" title="Go to top">Top</button>
+
   <footer class="image1">
   <p>Powered by <a href="https://www.themoviedb.org/" target = "_blank"> <img src = "tmdblogo1.svg" alt="The Movie Database Logo" style="width:100px; height:25px;"> </a>
   
   </p>
   </footer>
-    
+        
     <script>
+//Get the button
+var mybutton1 = document.getElementById("myBtn1");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton1.style.display = "block";
+  } else {
+    mybutton1.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+    
+    
+    
       /* Trigger Button Click on Enter */
       var input = document.getElementById("moviename");
       input.addEventListener("keyup", function(event) {
